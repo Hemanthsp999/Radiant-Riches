@@ -1,0 +1,105 @@
+$nav-background-color: transparent;
+$nav-hover-color: #28231d;
+// Adding the backgroundColor for body and font
+body {
+  color: black;
+  background-color: seashell;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+// This section focus on Navigation bar
+.nav {
+  background-color: #28231d;
+  color: white;
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+}
+
+// This is Button for navigation link like login etc...
+.nav-button {
+  margin-top: 10px;
+  text-align: start;
+  margin-top: -50px;
+  button {
+    background-color: $nav-background-color;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+// Added Hover functionality
+.nav-hover:hover {
+  color: white;
+}
+
+// Dropdown section
+.dropdown {
+  padding: 3px;
+  margin-left: -1px;
+  margin-top: -1px;
+  border: 2px solid #28231d;
+  background-color: #28231d;
+  width: 80px;
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  &:hover {
+    background-color: $nav-hover-color;
+  }
+}
+// The logo size and position are maintained here ...
+.logo {
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.menu {
+  padding-left: 10px;
+  width: 25px;
+}
+// Already existed code by default
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: seashell;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
